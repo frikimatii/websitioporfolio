@@ -248,6 +248,7 @@ let amzreview = document.getElementById('amzReview'); // web
 let Proyctosporta = document.getElementById('portafolioproyect'); // web
 let fadecostock = document.getElementById('fadecoapp'); // app
 let pets_wed = document.getElementById('petsweb') //desing
+let lofi_ = document.getElementById('lofi') //youtuve
 
 let boxer = document.getElementById('project-cards');
 let clear = document.getElementById('clear');
@@ -266,6 +267,7 @@ function todo(){
     let libro = mandalas.innerHTML;
     let beer = beerweb.innerHTML;
     let pets = pets_wed.innerHTML;
+    let lofi = lofi_.innerHTML; 
 
     clear.style.display = 'none';
 
@@ -281,7 +283,8 @@ function todo(){
     <div class="col-md-4 >${beer}</div>
     <div class="col-md-4 >${libro}</div>
     <div class="col-md-4 >${fadeweb}</div>
-    <div class="col-md-4 >${pets}</div> `;
+    <div class="col-md-4 >${pets}</div> 
+    <div class="col-md-4 >${lofi}</div> `;
 }
 
 
@@ -333,6 +336,7 @@ function desing() {
         let libro = mandalas.innerHTML;
         let beer = beerweb.innerHTML;
         let pets = pets_wed.innerHTML;
+        let lofibeats = lofi_.innerHTML; 
 
         if (clear) clear.style.display = 'none';
 
@@ -340,7 +344,8 @@ function desing() {
             boxer.innerHTML = `
             <div class="col-md-4 >${beer}</div>
             <div class="col-md-4 >${libro}</div>
-            <div class="col-md-4 >${pets}</div>`;
+            <div class="col-md-4 >${pets}</div>
+            <div class="col-md-4 >${lofibeats}</div> `;
         }
     } else {
         console.error('Uno o más elementos no existen en el DOM para la función desing.');

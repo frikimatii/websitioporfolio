@@ -249,6 +249,10 @@ let Proyctosporta = document.getElementById('portafolioproyect'); // web
 let fadecostock = document.getElementById('fadecoapp'); // app
 let pets_wed = document.getElementById('petsweb') //desing
 let lofi_ = document.getElementById('lofi') //youtuve
+let Fadeco_stock = document.getElementById('app_fadeco') //app
+let app_fadeco_repaciones = document.getElementById('app_fadeco_repaciones') //app
+let misterdinero007 = document.getElementById('misterdinero') //desing
+let ecos = document.getElementById('frikilogia') //desing
 
 let boxer = document.getElementById('project-cards');
 let clear = document.getElementById('clear');
@@ -268,6 +272,10 @@ function todo(){
     let beer = beerweb.innerHTML;
     let pets = pets_wed.innerHTML;
     let lofi = lofi_.innerHTML; 
+    let Fadeco_stock_actualizado = Fadeco_stock.innerHTML;
+    let app_fadeco_repaciones_app = app_fadeco_repaciones.innerHTML;
+    let mister = misterdinero007.innerHTML;
+    let frikilogia = ecos.innerHTML;
 
     clear.style.display = 'none';
 
@@ -284,13 +292,18 @@ function todo(){
     <div class="col-md-4 >${libro}</div>
     <div class="col-md-4 >${fadeweb}</div>
     <div class="col-md-4 >${pets}</div> 
-    <div class="col-md-4 >${lofi}</div> `;
+    <div class="col-md-4 >${lofi}</div> 
+    <div class="col-md-4 >${Fadeco_stock_actualizado}</div>
+    <div class="col-md-4 >${app_fadeco_repaciones}</div>
+    <div class="col-md-4 >${app_fadeco_repaciones_app}</div>
+    <div class="col-md-4 >${mister}</div>
+    <div class="col-md-4 >${frikilogia}</div>`;
 }
 
 
 
 function web() {
-    if (YahoraX && Noticias1 && Fadecoweb && enigmamente && amzreview && Proyctosporta) {
+    if (YahoraX && Noticias1 && Fadecoweb) {
         let Yahora = YahoraX.innerHTML;
         let FlujoInfo = Noticias1.innerHTML;
         let webfadeco = Fadecoweb.innerHTML;
@@ -315,16 +328,20 @@ function web() {
 }
 
 function app_1() {
-    if (fadecostock && tiempoApp) {
+    if (fadecostock && tiempoApp && Fadeco_stock&& app_fadeco_repaciones) {
         let app_fadeco = fadecostock.innerHTML;
         let app_tiempo = tiempoApp.innerHTML;
+        let Fadeco_actulizado = Fadeco_stock.innerHTML;
+        let app_reparaciones = app_fadeco_repaciones.innerHTML;
 
         if (clear) clear.style.display = 'none';
 
         if (boxer) {
             boxer.innerHTML = `
             <div class="col-md-4 >${app_fadeco}</div>
-            <div class="col-md-4 >${app_tiempo}</div>`;
+            <div class="col-md-4 >${app_tiempo}</div>
+            <div class="col-md-4 >${Fadeco_actulizado}</div>
+            <div class="col-md-4 >${app_reparaciones}</div>`;
         }
     } else {
         console.error('Uno o más elementos no existen en el DOM para la función app_1.');
@@ -337,6 +354,8 @@ function desing() {
         let beer = beerweb.innerHTML;
         let pets = pets_wed.innerHTML;
         let lofibeats = lofi_.innerHTML; 
+        let dinero007 = misterdinero007.innerHTML;
+        let youtube_frikigoia = ecos.innerHTML;
 
         if (clear) clear.style.display = 'none';
 
@@ -345,7 +364,9 @@ function desing() {
             <div class="col-md-4 >${beer}</div>
             <div class="col-md-4 >${libro}</div>
             <div class="col-md-4 >${pets}</div>
-            <div class="col-md-4 >${lofibeats}</div> `;
+            <div class="col-md-4 >${lofibeats}</div> 
+            <div class="col-md-4 >${dinero007}</div>
+            <div class="col-md-4 >${youtube_frikigoia}</div>`;
         }
     } else {
         console.error('Uno o más elementos no existen en el DOM para la función desing.');

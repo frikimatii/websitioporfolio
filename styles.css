@@ -236,7 +236,7 @@
 
 /* Imagen dentro del contenedor */
 .icon-imagen img {
-  width: 100%;
+  width: 75%;
   transition: transform 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   /* Sombra inicial */
@@ -516,3 +516,4 @@
   background-color: #b855e6;
   transform: none;
 }
+

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded" , function(){
-    const text = "Front-end & Diseñador Grafico";
+    const text = "Desarrollador Full Stack.";
     const typewriteElement = document.getElementById("typewriter");
     let i = 0;
     const speed = 200;
@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function(){
         pelotaCuatro.style.top = posY4 + 'px';
     }
 
-    setInterval(moverPelotas, 20);
+    setInterval(moverPelotas, 50);
 });
 
 
@@ -253,6 +253,7 @@ let Fadeco_stock = document.getElementById('app_fadeco') //app
 let app_fadeco_repaciones = document.getElementById('app_fadeco_repaciones') //app
 let misterdinero007 = document.getElementById('misterdinero') //desing
 let ecos = document.getElementById('frikilogia') //desing
+let stockfadeco2025 = document.getElementById('stockfadeco2025')
 
 let boxer = document.getElementById('project-cards');
 let clear = document.getElementById('clear');
@@ -276,10 +277,11 @@ function todo(){
     let app_fadeco_repaciones_app = app_fadeco_repaciones.innerHTML;
     let mister = misterdinero007.innerHTML;
     let frikilogia = ecos.innerHTML;
-
+    let stockfadeco = stockfadeco2025.innerHTML
     clear.style.display = 'none';
 
     boxer.innerHTML = `
+    <div class="col-md-4 >${stockfadeco}</div>
     <div class="col-md-4 >${app_fadeco}</div>
     <div class="col-md-4 >${Yahora}</div> 
     <div class="col-md-4 >${webfadeco}</div>
@@ -297,7 +299,9 @@ function todo(){
     <div class="col-md-4 >${app_fadeco_repaciones}</div>
     <div class="col-md-4 >${app_fadeco_repaciones_app}</div>
     <div class="col-md-4 >${mister}</div>
-    <div class="col-md-4 >${frikilogia}</div>`;
+    <div class="col-md-4 >${frikilogia}</div>
+
+    `;
 }
 
 
@@ -328,20 +332,23 @@ function web() {
 }
 
 function app_1() {
-    if (fadecostock && tiempoApp && Fadeco_stock&& app_fadeco_repaciones) {
+    if (fadecostock && tiempoApp && Fadeco_stock&& app_fadeco_repaciones && stockfadeco2025) {
         let app_fadeco = fadecostock.innerHTML;
         let app_tiempo = tiempoApp.innerHTML;
         let Fadeco_actulizado = Fadeco_stock.innerHTML;
         let app_reparaciones = app_fadeco_repaciones.innerHTML;
+        let app_stockfadeco = stockfadeco2025.innerHTML
 
         if (clear) clear.style.display = 'none';
 
         if (boxer) {
             boxer.innerHTML = `
+            <div class="col-md-4 >${app_stockfadeco}</div>
             <div class="col-md-4 >${app_fadeco}</div>
             <div class="col-md-4 >${app_tiempo}</div>
             <div class="col-md-4 >${Fadeco_actulizado}</div>
-            <div class="col-md-4 >${app_reparaciones}</div>`;
+            <div class="col-md-4 >${app_reparaciones}</div>
+            `;
         }
     } else {
         console.error('Uno o más elementos no existen en el DOM para la función app_1.');
